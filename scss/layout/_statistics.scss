@@ -1,0 +1,36 @@
+.statistics {
+  padding: 101px 0 161px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    padding: 45px 0 38px 48px;
+    border: 1px solid $BORDER-COLOR;
+    width: 100%;
+  }
+
+  &__number {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 13px;
+  }
+}
+
+@include mobile(){
+  .statistics{
+     padding: 112px 0 94px 0;
+    &__wrapper{
+      flex-direction: column;
+    }
+  }
+}

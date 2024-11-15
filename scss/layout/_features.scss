@@ -1,0 +1,51 @@
+.features {
+  padding-top: 191px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sup-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #ef6d58;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__list {
+    margin-top: 26px;
+  }
+
+  &__item-2 {
+    padding: 16px 0;
+  }
+
+  &__check-1 {
+    padding-right: 16px;
+  }
+}
+
+@include mobile(){
+    .features{
+        &__wrapper{
+            flex-direction: column-reverse;
+        }
+
+        &__title{
+            padding: 17px 0 13px 0 ;
+        }
+    }
+}

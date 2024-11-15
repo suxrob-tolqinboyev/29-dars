@@ -1,0 +1,12 @@
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+@include mobile(){
+    .container{
+        width: 100%;
+        min-width: 375px;
+        overflow-x:hidden;
+    }
+}

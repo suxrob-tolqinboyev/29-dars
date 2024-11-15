@@ -1,0 +1,42 @@
+.products {
+    padding: 213px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+  }
+
+  &__sup-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #ef6d58;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+  }
+
+  &__profil{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 31px 0 4px 0;
+  }
+
+  &__end{
+    padding-left: 84px;
+  }
+}
+
+@include mobile(){
+    .products{
+        padding: 112px;
+        &__wrapper{
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.reel {
+  margin-top: 127px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__play {
+    position: absolute;
+    left: 211px;
+    bottom: 110px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &__time {
+    position: absolute;
+    left: 24px;
+    bottom: 20px;
+    z-index: 2;
+  }
+
+  &__sup-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
+@include mobile() {
+  .reel {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__title{
+      padding: 17px 0;
+    }
+  }
+}

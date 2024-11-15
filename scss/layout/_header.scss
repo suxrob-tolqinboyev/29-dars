@@ -1,0 +1,50 @@
+.nav {
+    background: $BG-COLOR;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    
+    list-style: none;
+    color: white;
+    gap: 100px;
+  }
+
+  &__btn{
+    &:hover{
+      border: 1px solid #ef6d58;
+      background: #ef6d58;
+    }
+
+  }
+
+  &__ham-btn{
+    display: none;
+  }
+}
+
+@include mobile() {
+  .nav{
+     padding: 16px;
+
+    &__list{
+      display: none;
+    }
+
+    &__btn{
+      display: none;
+    }
+
+    &__ham-btn{
+      display: block;
+      padding: 17px 16px;
+      border: 1px solid grey;
+      border-radius: 6px;
+    }
+  }
+}
+
